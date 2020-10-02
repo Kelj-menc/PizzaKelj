@@ -45,7 +45,18 @@
            
 
                 @foreach($students as $student)       
-                <p> Student: {{$student['name']}} </p>
+                <p> 
+                <!-- ovaj $loop->index ima svaki loop a strelicu koristimo zato 
+                sto je loop object a ne array nem pojma sha to znaci -->
+                Student: Broj{{$loop->index}} {{$student['name']}} - Grade:{{$student['grade']}}
+                
+                <!-- ovo vazi samo za prvog u loop -->
+                @if($loop->first)
+                    <span>
+                    ovo je prvi u loop
+                    </span>
+                @endif
+                </p>
                 @endforeach     
 
             </div>
