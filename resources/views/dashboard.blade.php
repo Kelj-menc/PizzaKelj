@@ -41,8 +41,13 @@
             <div class="content">
                 <div class="title mx-auto ">
                 <b><h2>Students</h2></b>
-                </div>  
-                <p>student:{{$name}} <br>grade:{{$grade}} <br>price:{{$price}}</p>
+                </div>                  
+           
+
+                @foreach($students as $student)       
+                <p> Student: {{$student['name']}} </p>
+                @endforeach     
+
             </div>
 
 
@@ -51,3 +56,5 @@
             
     </body>
 </html>
+
+ 

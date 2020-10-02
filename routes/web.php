@@ -19,8 +19,14 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
 
-    $student=['name'=>'Ce Dung', 'grade'=>'4', 'price'=>'11$'];
-    return view('dashboard', $student);
+    $students=[
+                ['name'=>'Ce Dung', 'grade'=>'1', 'price'=>'3$'],
+                ['name'=>'su ming', 'grade'=>'2', 'price'=>'15$'],
+                ['name'=>'Li fungru mti', 'grade'=>'4', 'price'=>'80$'],
+                ['name'=>'Ce Ge Va Ra', 'grade'=>'5', 'price'=>'8000$']               
+            ];
+
+    return view('dashboard', ['students' => $students]);
 
     //ako hocesh da return samo text neki na page probaj ovo
     //return 'returniram text';
