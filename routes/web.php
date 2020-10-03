@@ -23,7 +23,7 @@ Route::get('/dashboard', function () {
                 ['name'=>'Ce Dung', 'grade'=>'1', 'price'=>'3$'],
                 ['name'=>'su ming', 'grade'=>'2', 'price'=>'15$'],
                 ['name'=>'Li fungru mti', 'grade'=>'4', 'price'=>'80$'],
-                ['name'=>'Ce Ge Va Ra', 'grade'=>'5', 'price'=>'8000$']               
+                ['name'=>'Če Ge Va Ra', 'grade'=>'5', 'price'=>'8000$']               
             ];
 
     return view('dashboard', ['students' => $students]);
