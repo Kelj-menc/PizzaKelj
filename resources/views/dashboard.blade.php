@@ -19,13 +19,14 @@
     <div class="content">
         <div class="title mx-auto ">
         <b><h2>Students</h2></b>
-        </div>                  
+        </div>          
+        <p>Teacher:{{$name}} at age{{$age}}</p>        
 
         @foreach($students as $student)       
             <p> 
         <!-- ovaj $loop->index ima svaki loop a strelicu koristimo zato 
         sto je loop object a ne array nem pojma sha to znaci -->
-        Student: Broj{{$loop->index}} {{$student['name']}} - Grade:{{$student['grade']}}
+        Student: Broj{{$loop->index}} {{$student['nameUcenika']}} - Grade:{{$student['grade']}}
         
                 <!-- ovo vazi samo za prvog u loop (span btw znaci da ostajemo u liniji)-->
                 @if($loop->first)
