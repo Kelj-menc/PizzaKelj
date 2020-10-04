@@ -24,7 +24,8 @@ and add them to the path of your sistem (php/composer/npm/git/MySqul) so you can
 
 --Open the console and cd into folder where you want to clone PizzaKelj project and run
 
-   git clone https://github.com/Kelj-menc/PizzaKelj.git
+
+    git clone https://github.com/Kelj-menc/PizzaKelj.git
     
 --in the new project directory locate ....PizzaKelj\.git\config file (its hidden on my system) open it and
     add this into:
