@@ -23,24 +23,10 @@
         <p>Teacher:{{$name}} at age{{$age}}</p>        
 
         @foreach($students as $student)       
-            <p> 
-        <!-- ovaj $loop->index ima svaki loop a strelicu koristimo zato 
-        sto je loop object a ne array nem pojma sha to znaci -->
-        Student: Broj{{$loop->index}} {{$student['nameUcenika']}} - Grade:{{$student['grade']}}
-        
-                <!-- ovo vazi samo za prvog u loop (span btw znaci da ostajemo u liniji)-->
-                @if($loop->first)
-                    <span>
-                    ovo je prvi u loop
-                    </span>
-                @endif
-                <!-- ovo vazi samo za zadnjeg u loop (span btw znaci da ostajemo u liniji)-->
-                @if($loop->last)
-                    <span>
-                    ovo je zadnji u loop
-                    </span>
-                @endif
-            </p>
+      <div>
+            Name:{{$student->name}} - grade:{{$student->grade}} - note:{{$student->note}} - used:{{$student->used}}
+      
+      </div>
         @endforeach    
     </div
 </div>

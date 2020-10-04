@@ -3,19 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Student;
 
 class DashboardController extends Controller
 {
     public function index(){
-            $students=[
-                ['nameUcenika'=>'Ce Dung', 'grade'=>'1', 'price'=>'3$'],
-                ['nameUcenika'=>'su ming', 'grade'=>'2', 'price'=>'15$'],
-                ['nameUcenika'=>'Li fungru mti', 'grade'=>'4', 'price'=>'80$'],
-                ['nameUcenika'=>'Če Ge Va Ra', 'grade'=>'5', 'price'=>'8000$']               
-            ];          
+        //$students = Student::all();
+        //$students = Student::where('grade', 4)->get();
+        $students = Student::latest()->get();
+      
         
         return view('dashboard', [
                                     'students' => $students,
+                                    //ova dole dva su opciona blah
+                                    //ali ako ih obrises morash i u view
                                     'name' => request('name'),
                                     'age' => request('age'),                                
                                 ]);
