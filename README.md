@@ -22,42 +22,62 @@ install on your sistem
     
 and add them to the path of your sistem (php/composer/npm/git/MySqul) so you can use them globaly.
 
--Open the console and cd into folder where you want to clone PizzaKelj project and run
-    git clone https://github.com/Kelj-menc/PizzaKelj.git
+--Open the console and cd into folder where you want to clone PizzaKelj project and run
+
+   git clone https://github.com/Kelj-menc/PizzaKelj.git
     
--in the new project directory locate ....PizzaKelj\.git\config file (its hidden on my system) open it and
+--in the new project directory locate ....PizzaKelj\.git\config file (its hidden on my system) open it and
     add this into:
+    
     [user]
     email = "your-gitregister-email@example.com"
     name = "Your-Git-Hub_username"
-    save and close.
     
--In the project folder (\PizzaKelj) locate '.env.example' file > make a copy of that file  > past it in a same directory and rename it in a '.env' now open that file wit some text editor and change in a DATABASE section DB_DATABASE=pizzakelj and DB_CONNECTION=mysql
+save and close.
+    
+    
+--In the project folder (\PizzaKelj) locate '.env.example' file > make a copy of that file  > past it in a same directory and rename it in a '.env' now open that file wit some text editor and change in a DATABASE section 
 
--Fire up xamp and start server and mysql > click on admin(mysql) button > make new database > name:pizzakelj
+
+    DB_DATABASE=pizzakelj and 
+    DB_CONNECTION=mysql
+
+--Fire up xamp and start server and mysql > click on admin(mysql) button > make new database > name:pizzakelj
     
--Open the console and cd into PROJECT folder (/PizzaKelj) and run
+--Open the console and cd into PROJECT folder (/PizzaKelj) and run
     composer update
     next run
     php artisan key:generate
     and finally
     php artisan migrate
 
--Open the console and cd into PROJECT folder (/PizzaKelj) and run
+--Open the console and cd into PROJECT folder (/PizzaKelj) and run
     php artisan serve
     
 Finally in your browser you can check out this addresses for example:
+
+
 http://127.0.0.1:8000/
+
 http://127.0.0.1:8000/students
+
 http://127.0.0.1:8000/students/create
 
+
 ## Programing Languigues and Frameworks
+
 -Laravel
+
 -PHP
+
 -HTML
+
 -JavaScript
+
 -NodeJS
+
 -MySqul/SqLite
+
 
 ## Contributing
 
