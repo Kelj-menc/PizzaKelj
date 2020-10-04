@@ -46,10 +46,16 @@ save and close.
 --Fire up xamp and start server and mysql > click on admin(mysql) button > make new database > name:pizzakelj
     
 --Open the console and cd into PROJECT folder (/PizzaKelj) and run
+
+
     composer update
-    next run
+    
+next run
+
     php artisan key:generate
-    and finally
+    
+and finally
+
     php artisan migrate
 
 --Open the console and cd into PROJECT folder (/PizzaKelj) and run
