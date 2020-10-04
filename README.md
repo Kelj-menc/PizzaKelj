@@ -10,7 +10,7 @@ Sorry in advance - I need to say this at the begining of this jurnej becouse I'm
 
 
 ## Instaling Project
-Ill write how I doing this on my system win10 64bit and Visual Studio Code - free source-code editor. Please contribute if you find bether simplier way to install this or any similar project in your sistem/enviroment
+Ill write how I doing this on my system - win10 64bit, and Visual Studio Code - free source-code editor. Please contribute if you find bether or simplier way to install/clone this or any similar project in your sistem/enviroment for development purpose.
 
 installation prerequisites:
 install on your sistem 
@@ -18,7 +18,7 @@ install on your sistem
     2.composer - latest
     3.nodejs - latest
     4.git - latest
-    5.xamp (with apache server and MySqul)    
+    5.xamp (with apache server and MySql)    
     
 and add them to the path of your sistem (php/composer/npm/git/MySqul) so you can use them globaly.
 
@@ -33,18 +33,23 @@ and add them to the path of your sistem (php/composer/npm/git/MySqul) so you can
     save and close.
     
 -In the project folder (\PizzaKelj) locate '.env.example' file > make a copy of that file  > past it in a same directory and rename it in a '.env' now open that file wit some text editor and change in a DATABASE section DB_DATABASE=pizzakelj and DB_CONNECTION=mysql
+
+-Fire up xamp and start server and mysql > click on admin(mysql) button > make new database > name:pizzakelj
     
 -Open the console and cd into PROJECT folder (/PizzaKelj) and run
     composer update
-    
--Fire up xamp and start server and mysql > click on admin(mysql) button > make new database > name:pizzakelj
+    next run
+    php artisan key:generate
+    and finally
+    php artisan migrate
 
 -Open the console and cd into PROJECT folder (/PizzaKelj) and run
     php artisan serve
-
--And last - open PizzaKelj project folder in a VSCode 
     
-
+Finally in your browser you can check out this addresses for example:
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/students
+http://127.0.0.1:8000/students/create
 
 ## Programing Languigues and Frameworks
 -Laravel
