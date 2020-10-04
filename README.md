@@ -61,7 +61,7 @@ and finally
 --Open the console and cd into PROJECT folder (/PizzaKelj) and run
     php artisan serve
     
-Finally in your browser you can check out this addresses for example:
+Finally if everything is OK in your browser you can check out this addresses for example:
 
 
 http://127.0.0.1:8000/
