@@ -20,7 +20,7 @@
         <div class="title mx-auto ">
         <b><h2>Students</h2></b>
         </div>          
-        <p>Teacher:{{$name}} at age{{$age}}</p>        
+              
 
         @foreach($students as $student)       
       <div>

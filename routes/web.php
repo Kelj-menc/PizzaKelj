@@ -17,5 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
-Route::get('/dashboard/{id}', 'App\Http\Controllers\DashboardController@show');
+Route::get('/students', 'App\Http\Controllers\StudentController@index');
+Route::get('/students/create', 'App\Http\Controllers\StudentController@create');
+Route::get('/students/{id}', 'App\Http\Controllers\StudentController@show');
+
