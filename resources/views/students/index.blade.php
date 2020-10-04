@@ -22,7 +22,7 @@
         </div>          
               
 
-        @foreach($students as $student)       
+        @foreach($students as $student)     
       <div>
             Name:{{$student->name}} - grade:{{$student->grade}} - note:{{$student->note}} - used:{{$student->used}}
       

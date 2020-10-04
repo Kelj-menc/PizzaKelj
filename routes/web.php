@@ -20,4 +20,3 @@ Route::get('/', function () {
 Route::get('/students', 'App\Http\Controllers\StudentController@index');
 Route::get('/students/create', 'App\Http\Controllers\StudentController@create');
 Route::get('/students/{id}', 'App\Http\Controllers\StudentController@show');
-

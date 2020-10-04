@@ -8,13 +8,12 @@ use App\Models\Student;
 class StudentController extends Controller
 {
     public function index(){
-        $students = Student::all();
+        //$students = Student::all();
         //$students = Student::where('grade', 4)->get();
-        //$students = Student::latest()->get();
+        $students = Student::latest()->get();
       
         
-        return view('students.index', ['students' => $students])                                
-                                ;
+        return view('students.index', ['students' => $students]);
 
     }
 
