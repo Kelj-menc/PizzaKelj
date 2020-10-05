@@ -19,10 +19,12 @@
     <div class="wrapper create-students">
     
     <h1>Create new student</h1>
-    <form action="" method="">
+    <form action="/students" method="POST">
+        <!-- name of the student -->
         <label for="name">Student name:</label>
         <input type="text" id="name" name="name"></input>
         <br>
+        <!-- grade ovde bi mi lepshe pasao slider ... -->
         <label for="grade">Student grade in your opinion (1-10):</label>
         <select name="grade" id="grade">
             <option value="1">1</option>
@@ -37,9 +39,11 @@
             <option value="10">10</option>
         </select>
         <br>
+        <!-- about student - note -->
         <label for="note">Note about this student(optional):</label>
         <input type="text" id="note" name="note"></input>
         <br>
+        <!-- submit button -->
         <input type="submit" value="Submit new student">
     </form>
     
