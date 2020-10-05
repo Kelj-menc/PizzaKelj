@@ -9,7 +9,7 @@ I'll learn Laravel following different online tutorials. At the same time will t
 Sorry in advance - I need to say this at the beginning of this journey because I'm a total noob in terms of properly formating and efficiently writing code and generally in the programming world. So if anyone wanna learn how to do things properly, they should leave this place. 
 
 
-## Instaling Project
+## Instaling Project (for development purposes)
 I'll write how I am doing this on my system - win10 64bit, and Visual Studio Code - free source-code editor. Please contribute if you find a better or simpler way to install/clone this or any similar project in your system/environment for development purposes.
 
 installation prerequisites:
