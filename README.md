@@ -2,15 +2,15 @@
 
 ## About This Laravel "PizzaKelj" Project
 
-Dont look at the name - it doesent mean anything.
+Dont look at the name - it doesn't mean anything.
 
-I'll learn Laravel following diferent online tutorials. In a same time will try to build one real life application. Idea for the app came from my doughter and hopefully will be lounched some day and will help people. For me personally this project will be successuful if we (my doughter and I) spend some quality time togeather bulding and learning new things.
+I'll learn Laravel following different online tutorials. At the same time will try to build one real-life application. The idea for the app came from my daughter and hopefully will be launched someday and will help people. For me personally, this project will be successful if we (my daughter and I) spend some quality time together, building and learning new things.
 
-Sorry in advance - I need to say this at the begining of this jurnej becouse I'm total noob in terms of properly formating and eficiently writing code and generally in programing world. So if anyone wanna learn how to do things properly should leave this place. 
+Sorry in advance - I need to say this at the beginning of this journey because I'm a total noob in terms of properly formating and efficiently writing code and generally in the programming world. So if anyone wanna learn how to do things properly, they should leave this place. 
 
 
 ## Instaling Project
-Ill write how I doing this on my system - win10 64bit, and Visual Studio Code - free source-code editor. Please contribute if you find bether or simplier way to install/clone this or any similar project in your sistem/enviroment for development purpose.
+I'll write how I am doing this on my system - win10 64bit, and Visual Studio Code - free source-code editor. Please contribute if you find a better or simpler way to install/clone this or any similar project in your system/environment for development purposes.
 
 installation prerequisites:
 install on your sistem 
@@ -20,9 +20,9 @@ install on your sistem
     4.git - latest
     5.xamp (with apache server and MySql)    
     
-and add them to the path of your sistem (php/composer/npm/git/MySqul) so you can use them globaly.
+And add them to the path of your system (PHP/composer/npm/git/MySql), so you can use them globally.
 
---Open the console and cd into folder where you want to clone PizzaKelj project and run
+--Open the console and cd into the folder where you want to clone the PizzaKelj project and run
 
 
     git clone https://github.com/Kelj-menc/PizzaKelj.git
@@ -34,10 +34,10 @@ and add them to the path of your sistem (php/composer/npm/git/MySqul) so you can
     email = "your-gitregister-email@example.com"
     name = "Your-Git-Hub_username"
     
-save and close.
+Save and close.
     
     
---In the project folder (\PizzaKelj) locate '.env.example' file > make a copy of that file  > past it in a same directory and rename it in a '.env' now open that file wit some text editor and change in a DATABASE section 
+--In the project folder (\PizzaKelj) locate '.env.example' file > make a copy of that file  > past it in the same directory and rename it in a '.env' now open that file with some text editor and change in a DATABASE section 
 
 
     DB_DATABASE=pizzakelj and 
@@ -52,7 +52,7 @@ save and close.
     
 next run
 
-    php artisan key:generate
+    PHP artisan key:generate
     
 and finally
 
@@ -61,7 +61,7 @@ and finally
 --Open the console and cd into PROJECT folder (/PizzaKelj) and run
     php artisan serve
     
-Finally if everything is OK in your browser you can check out this addresses for example:
+Finally, if everything is OK in your browser, you can check out this addresses, for example:
 
 
 http://127.0.0.1:8000/
@@ -71,7 +71,7 @@ http://127.0.0.1:8000/students
 http://127.0.0.1:8000/students/create
 
 
-## Programing Languigues and Frameworks
+## Programing Languages and Frameworks
 
 -Laravel
 
@@ -83,7 +83,7 @@ http://127.0.0.1:8000/students/create
 
 -NodeJS
 
--MySqul/SqLite
+-MySql/SQLite
 
 
 ## Contributing
@@ -92,7 +92,7 @@ Thank you for considering contributing to the project!
 
 ## Code of Conduct
 
-The community is welcoming to all, please review and abide.
+The community is welcoming to all. Please review and abide.
 
 ## Security Vulnerabilities
 
@@ -100,4 +100,4 @@ If you discover a security vulnerability within this project, please send a mess
 
 ## License
 
-Project will be open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT), till my doughter doesent disaide diferently.
+The project will be open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT) until my daughter doesn't decide differently.
