@@ -20,6 +20,7 @@
     
     <h1>Create new student</h1>
     <form action="/students" method="POST">
+        @csrf
         <!-- name of the student -->
         <label for="name">Student name:</label>
         <input type="text" id="name" name="name"></input>

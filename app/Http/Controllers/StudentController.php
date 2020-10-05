@@ -27,4 +27,11 @@ class StudentController extends Controller
        
         return view('students.create');
     }
+
+    public function store(){
+        error_log(request('name'));
+        error_log(request('grade'));
+        error_log(request('note'));
+        return redirect('/');
+    }
 }
