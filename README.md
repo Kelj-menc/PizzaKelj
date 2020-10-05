@@ -70,6 +70,10 @@ http://127.0.0.1:8000/students
 
 http://127.0.0.1:8000/students/create
 
+http://127.0.0.1:8000/students/2
+
+http://127.0.0.1:8000/students/Keljmenc
+
 
 ## Programing Languages and Frameworks
 

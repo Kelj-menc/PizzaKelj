@@ -18,7 +18,9 @@ class StudentController extends Controller
     }
 
     public function show($id){
-        return view('students.show', ['id' => $id]);
+
+        $student  = Student::findOrFail($id);
+        return view('students.show', ['student' => $student]);
     }
 
     public function create(){
