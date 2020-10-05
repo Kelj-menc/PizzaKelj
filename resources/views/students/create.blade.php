@@ -16,14 +16,46 @@
     @endif
     
     <!-- ja pobriso defoult gluposti i dodao samo ovo -->
-    <div class="content">
-        <div class="title mx-auto ">
-        <b><h2>Add new student</h2></b>
-        </div>          
-            
+    <div class="wrapper create-students">
+    
+    <h1>Create new student</h1>
+    <form action="" method="">
+        <label for="name">Student name:</label>
+        <input type="text" id="name" name="name"></input>
+        <br>
+        <label for="grade">Student grade in your opinion (1-10):</label>
+        <select name="grade" id="grade">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        <label for="note">Note about this student(optional):</label>
+        <input type="text" id="note" name="note"></input>
+        <br>
+        <input type="submit" value="Submit new student">
+    </form>
+    
 
-      
-    </div
+
+
+
+
+
+    </div>
+
+
+
+
+
+
 </div>
 
 @endsection

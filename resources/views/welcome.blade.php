@@ -28,8 +28,13 @@
                             <div class="title m-b-md">
                                 Anabella help teachers
                             </div>
-                            <div class="text m-b-md">Make more money</div>
+                            <div class="text m-b-md">Make more money  
+                            <a href="/students/create"><button>&gt; &gt; &gt; Create new student</button></a>  
+                            </div>
+                            
                             <img src="\img\SuperheroTeacher1.png" alt="teacher logo>"
+
+                            
                          </div><!-- dovde -->                                      
                    <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
