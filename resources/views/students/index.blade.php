@@ -18,13 +18,15 @@
     <!-- ja pobriso defoult gluposti i dodao samo ovo -->
     <div class="content">
         <div class="title mx-auto ">
-        <b><h2>Students</h2></b>
-        </div>          
+        <b><h2>My Students</h2></b>
+        </div>         
+        <p class="mssg">{{ session('mssg')}}</p> 
               
 
         @foreach($students as $student)     
       <div>
-            Name:{{$student->name}} - grade:{{$student->grade}} - note:{{$student->note}} - used:{{$student->used}}
+            <b>Name: {{$student->name}} </b><br>
+            <div>   grade:{{$student->grade}} - note:{{$student->note}} - used:{{$student->used}}</div><br>
       
       </div>
         @endforeach    

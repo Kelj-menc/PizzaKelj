@@ -29,9 +29,16 @@ class StudentController extends Controller
     }
 
     public function store(){
-        error_log(request('name'));
-        error_log(request('grade'));
-        error_log(request('note'));
-        return redirect('/');
+
+        $student = new Student();
+
+        $student->name =request('name');
+        $student->grade =request('grade');
+        $student->note =request('note', "");
+        $student->used ="";
+
+        $student->save();
+        // add mssge  to the user about new student creation aftr ->
+        return redirect('/students')->with('mssg', 'NOTES! You add a new student into your students list - '.$student->name);
     }
 }
