@@ -20,8 +20,9 @@
         <div class="title mx-auto ">
         <b><h2>My Students</h2></b>
         </div>         
-        <p class="mssg">{{ session('mssg')}}</p> 
-              
+        <p class="mssg">{{ session('mssg')}}</p>
+
+
 
         @foreach($students as $student)     
       <div>
