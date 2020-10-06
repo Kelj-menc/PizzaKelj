@@ -15,11 +15,15 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
             $table->string('name');
             $table->integer('grade');
-            $table->text('used');
-            $table->text('note');
-            $table->timestamps();
+            $table->text('used_comments');
+            $table->text('about_student');
+            //gender:Female, Male, Others
+            $table->string('gender');
+            //categories: Introduction, Behavior, Speaking, Reading, Writing, Listening, Comprehension, Subject, Conclusion	
+            $table->json('categories');
         });
     }
 

@@ -27,7 +27,7 @@
         @foreach($students as $student)     
       <div>
             <b>Name: {{$student->name}} </b><br>
-            <div>   grade:{{$student->grade}} - note:{{$student->note}} - used:{{$student->used}}</div><br>
+            <div>   grade:{{$student->grade}} - about student:{{$student->about_student}} - used comments:{{$student->used_comments}}</div><br>
       
       </div>
         @endforeach    

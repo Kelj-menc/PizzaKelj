@@ -32,10 +32,12 @@ class StudentController extends Controller
 
         $student = new Student();
 
-        $student->name =request('name');
+        $student->name =request('name', "");
         $student->grade =request('grade');
-        $student->note =request('note', "");
-        $student->used ="";
+        $student->about_student =request('about_student', "");
+        $student->used_comments ="";
+        $student->gender =request('gender', "Others");
+        $student->categories =request('categories', "");
 
         $student->save();
         // add mssge  to the user about new student creation aftr ->

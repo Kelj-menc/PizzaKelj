@@ -25,6 +25,25 @@
             <label for="name">Student name:</label>
             <input type="text" id="name" name="name"></input>
             <br>
+
+            <!--radiobutton -->
+            <div id="gender-group" class="form-group{{ $errors->has('gender') ? ' has-error' : '' }}">
+             <label for="gender" class="col-md-4 control-label">Gender</label>
+
+            <div class="col-md-6">
+             <div><input id="female" type="radio"class="form-control" name="gender" value="Female" {{ (old('sex') == 'female') ? 'checked' : '' }} >Female</div>
+             <div><input id="male" type="radio"class="form-control" name="gender" value="Male" {{ (old('sex') == 'male') ? 'checked' : '' }} >Male</div>
+             <div><input id="other" type="radio"class="form-control" name="gender" value="Others" {{ (old('sex') == 'other') ? 'checked' : '' }} >Other</div>
+                @if ($errors->has('gender'))
+                <span class="help-block">
+                <strong>{{ $errors->first('gender') }}</strong>
+                </span>
+                @endif
+             </div>
+             </div>
+
+
+            
             <!-- grade ovde bi mi lepshe pasao slider ... -->
             <label for="grade">Student grade in your opinion (1-10):</label>
             <select name="grade" id="grade">
@@ -40,10 +59,29 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <!-- about student - note -->
-            <label for="note">Note about this student(optional):</label>
-            <input type="text" id="note" name="note"></input>
+            <!-- about student - about_student -->
+            <label for="about_student">About student about this student(optional):</label>
+            <input type="text" id="about_student" name="about_student"></input>
             <br>
+            
+            <!-- categories -->
+            <fieldset>
+            <label>Categories</label><br />
+            
+            <input type="checkbox" name="categories[]" value="Introduction">Introduction<br />
+            <input type="checkbox" name="categories[]" value="Behavior">Behavior<br />
+            <input type="checkbox" name="categories[]" value="Speaking">Speaking<br />
+            <input type="checkbox" name="categories[]" value="Reading">Reading<br />
+            <input type="checkbox" name="categories[]" value="Writing">Writing<br />
+            <input type="checkbox" name="categories[]" value="Listening">Listening<br />
+            <input type="checkbox" name="categories[]" value="Comprehension">Comprehension<br />
+            <input type="checkbox" name="categories[]" value="Subject">Subject<br />
+            <input type="checkbox" name="categories[]" value="Conclusion ">Conclusion <br />
+            
+            
+            </fieldset>
+
+
             <!-- submit button -->
             <input type="submit" value="Submit new student">
         </form>

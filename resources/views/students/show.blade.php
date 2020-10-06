@@ -18,8 +18,17 @@
     <!-- ja pobriso defoult gluposti i dodao samo ovo -->
     <div class="wrapper student-details">    
         <h1><b>Student:</b> {{$student->name}}</h1>
-        <p class="used"><b>used comments so far:</b> {{$student->used}}</p>
-        <p class="note"><b>about:</b> {{$student->note}}</p>
+        <p class="used"><b>Used comments so far:</b> {{$student->used_comments}}</p>
+        <p class="about_student"><b>about:</b> {{$student->about_student}}</p>
+        <p class="categories"><b>Categories</b></p>
+        <ul>
+            @foreach($student->categories as $category)
+                <li>{{$category}}</li>
+            @endforeach
+        
+        </ul>
+
+
         <p class="date"><b>created at(m.d.Y):</b> {{($my_var = date("m.d.Y",strtotime($student->created_at)))}}</p>
         <a href="/students" class="btnStack">Back to all students</a><br>
         <a href="/students"><button>&lt; &lt; Back to all students</button></a>            
