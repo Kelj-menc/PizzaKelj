@@ -66,8 +66,7 @@
             
             <!-- categories -->
             <fieldset>
-            <label>Categories</label><br />
-            
+            <label>Categories</label><br />            
             <input type="checkbox" name="categories[]" value="Introduction">Introduction<br />
             <input type="checkbox" name="categories[]" value="Behavior">Behavior<br />
             <input type="checkbox" name="categories[]" value="Speaking">Speaking<br />
@@ -76,9 +75,7 @@
             <input type="checkbox" name="categories[]" value="Listening">Listening<br />
             <input type="checkbox" name="categories[]" value="Comprehension">Comprehension<br />
             <input type="checkbox" name="categories[]" value="Subject">Subject<br />
-            <input type="checkbox" name="categories[]" value="Conclusion ">Conclusion <br />
-            
-            
+            <input type="checkbox" name="categories[]" value="Conclusion ">Conclusion <br />           
             </fieldset>
 
 
