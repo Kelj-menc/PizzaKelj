@@ -28,9 +28,16 @@
             @endforeach
         
         </ul>
-
-
+        
         <p class="date"><b>created at(m.d.Y):</b> {{($my_var = date("m.d.Y",strtotime($student->created_at)))}}</p>
+        <!-- delete student button -->
+        <form action="/students/{{ $student->id}}" method="POST">
+        @csrf 
+        @method('DELETE')
+        <button>Complete delete student</button>
+        </form>
+        <br />
+        <!-- back button -->
         <a href="/students" class="btnStack">Back to all students</a><br>
         <a href="/students"><button>&lt; &lt; Back to all students</button></a>            
     </div>   

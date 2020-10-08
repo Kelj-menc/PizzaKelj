@@ -43,4 +43,12 @@ class StudentController extends Controller
         // add mssge  to the user about new student creation aftr ->
         return redirect('/students')->with('mssg', 'NOTES! You add a new student into your students list - '.$student->name);
     }
+
+    public function destroy($id){
+        $students = Student::findOrFail($id);
+        $students->delete();
+        return redirect('/students');
+    }
+
+
 }
