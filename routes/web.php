@@ -22,3 +22,7 @@ Route::get('/students/create', 'App\Http\Controllers\StudentController@create');
 Route::post('/students', 'App\Http\Controllers\StudentController@store');
 Route::get('/students/{id}', 'App\Http\Controllers\StudentController@show');
 Route::delete('/students/{id}', 'App\Http\Controllers\StudentController@destroy');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
