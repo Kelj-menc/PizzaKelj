@@ -14,8 +14,9 @@ class StudentController extends Controller
     public function index(){
         //$students = Student::all();
         //$students = Student::where('grade', 4)->get();
-        $students = Student::latest()->get();
-      
+        //ovo ispod sam ja spetljao da samo svoje studente vidi
+        $students = Student::where('teacher_id', (auth()->user()->id))->get();
+        //$students = Student::latest()->get();      
         
         return view('students.index', ['students' => $students]);
 
@@ -23,8 +24,15 @@ class StudentController extends Controller
 
     public function show($id){
 
-        $student  = Student::findOrFail($id);
-        return view('students.show', ['student' => $student]);
+        $student  = Student::find($id);
+        //dd ($student);
+        if(!$student)
+            return redirect('/tudents');
+        elseif ($student->teacher_id == (auth()->user()->id))
+            return view('students.show', ['student' => $student]);
+        else
+            return redirect('/tudents');
+            
     }
 
     public function create(){
@@ -32,18 +40,19 @@ class StudentController extends Controller
         return view('students.create');
     }
 
-    public function store(){
+    public function store(){        
 
         $student = new Student();
-
+        $student->teacher_id = auth()->user()->id;
         $student->name =request('name', "");
         $student->grade =request('grade');
         $student->about_student =request('about_student', "");
         $student->used_comments ="";
         $student->gender =request('gender', "Others");
-        $student->categories =request('categories', "");
+        $student->categories =request('categories');
 
         $student->save();
+        //dd ($student);
         // add mssge  to the user about new student creation aftr ->
         return redirect('/students')->with('mssg', 'NOTES! You add a new student into your students list - '.$student->name);
     }

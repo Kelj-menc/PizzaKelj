@@ -18,12 +18,13 @@ class CreateStudentsTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->integer('grade');
+            $table->integer('teacher_id');
             $table->text('used_comments');
             $table->text('about_student');
             //gender:Female, Male, Others
             $table->string('gender');
             //categories: Introduction, Behavior, Speaking, Reading, Writing, Listening, Comprehension, Subject, Conclusion	
-            $table->json('categories');
+            $table->json('categories')->nullable();
         });
     }
 
