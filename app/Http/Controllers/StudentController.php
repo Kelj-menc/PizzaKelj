@@ -27,11 +27,11 @@ class StudentController extends Controller
         $student  = Student::find($id);
         //dd ($student);
         if(!$student)
-            return redirect('/tudents');
+            return redirect('/students');
         elseif ($student->teacher_id == (auth()->user()->id))
             return view('students.show', ['student' => $student]);
         else
-            return redirect('/tudents');
+            return redirect('/students');
             
     }
 

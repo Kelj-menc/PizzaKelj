@@ -11,10 +11,14 @@
         <p class="about_student"><b>about:</b> {{$student->about_student}}</p>
         <p class="gender"><b>gender:</b> {{$student->gender}}</p>
         <p class="categories"><b>Categories</b></p>
-        <ul>
-            @foreach($student->categories as $category)
-                <li>{{$category}}</li>
-            @endforeach        
+        <ul>          
+            @if(!$student->categories)
+                <p>Nemash kategorije selected kako mislis da napravish comment???</p>  
+                @else
+                    @foreach($student->categories as $category)
+                        <li>{{$category}}</li>
+                    @endforeach     
+            @endif   
         </ul>
         
         <p class="date"><b>created at(m.d.Y):</b> {{($my_var = date("m.d.Y",strtotime($student->created_at)))}}</p>
