@@ -1,36 +1,25 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-    @if (Route::has('login'))
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-            @auth
-                <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-            @else
-                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                @endif
-            @endif
-        </div>
-    @endif
+    
     
     <!-- ja pobriso defoult gluposti i dodao samo ovo -->
     <div class="content">
         <div class="title mx-auto ">
         <b><h2>My Students</h2></b>
-        </div>         
+        </div>    
+        <!-- ovo je message kad napravish novog studenta -->
         <p class="mssg">{{ session('mssg')}}</p>
 
-
-
-        @foreach($students as $student)     
-      <div>
-            <b>Name: {{$student->name}} </b><br>
-            <div>   grade:{{$student->grade}} - about student:{{$student->about_student}} - used comments:{{$student->used_comments}}</div><br>
-      
-      </div>
-        @endforeach    
+        <div class="wrapper student-index">
+            @foreach($students as $student)     
+                <div>
+                    <a href="/students/{{$student->id}}"><b>{{$student->name}} </b><br></a>
+                    <br>      
+                </div>
+            @endforeach
+        </div>    
     </div
 </div>
 

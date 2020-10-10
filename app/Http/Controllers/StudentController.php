@@ -7,6 +7,10 @@ use App\Models\Student;
 
 class StudentController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index(){
         //$students = Student::all();
         //$students = Student::where('grade', 4)->get();
