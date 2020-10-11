@@ -23,7 +23,6 @@ class StudentController extends Controller
     }
 
     public function show($id){
-
         $student  = Student::find($id);
         //dd ($student);
         if(!$student)
@@ -31,8 +30,7 @@ class StudentController extends Controller
         elseif ($student->teacher_id == (auth()->user()->id))
             return view('students.show', ['student' => $student]);
         else
-            return redirect('/students');
-            
+            return redirect('/students');            
     }
 
     public function create(){

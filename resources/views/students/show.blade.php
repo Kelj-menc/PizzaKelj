@@ -23,7 +23,8 @@
         
         <p class="date"><b>created at(m.d.Y):</b> {{($my_var = date("m.d.Y",strtotime($student->created_at)))}}</p>
         <!-- delete student button -->
-        <form action="/students/{{ $student->id}}" method="POST">
+        <!-- oldd:        <form action="/students/{{ $student->id}}" method="POST">       -->
+        <form action="{{ route('students.destroy', $student->id)}}" method="POST">
         @csrf 
         @method('DELETE')
         <button>delete student</button>

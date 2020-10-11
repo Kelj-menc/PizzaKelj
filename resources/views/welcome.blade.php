@@ -29,7 +29,7 @@
                                 Anabella help teachers
                             </div>
                             <div class="text m-b-md">Make more money  
-                            <a href="/students/create"><button>&gt; &gt; &gt; Create new student</button></a>  
+                            <a href="{{ route('students.create') }}"><button>&gt; &gt; &gt; Create new student</button></a>  
                             </div>
                             
                             <img src="\img\SuperheroTeacher1.png" alt="teacher logo>"
