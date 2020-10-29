@@ -12,13 +12,18 @@ Sorry in advance - I need to say this at the beginning of this journey because I
 ## Instaling Project (for development purposes)
 I'll write how I am doing this on my system - win10 64bit, and Visual Studio Code - free source-code editor. Please contribute if you find a better or simpler way to install/clone this or any similar project in your system/environment for development purposes.
 
-installation prerequisites:
-install on your sistem 
+installation prerequisites(install on your sistem ):
+
     1.php (recommended 7+)
+    
     2.composer - latest
+    
     3.nodejs - latest
+    
     4.git - latest
+    
     5.xamp (with apache server and MySql)    
+    
     
 And add them to the path of your system (PHP/composer/npm/git/MySql), so you can use them globally.
 
@@ -40,7 +45,7 @@ Save and close.
 --In the project folder (\PizzaKelj) locate '.env.example' file > make a copy of that file  > past it in the same directory and rename it in a '.env' now open that file with some text editor and change in a DATABASE section 
 
 
-    DB_DATABASE=pizzakelj and 
+    DB_DATABASE=pizzakelj
     DB_CONNECTION=mysql
 
 --Fire up xamp and start server and mysql > click on admin(mysql) button > make new database > name:pizzakelj
